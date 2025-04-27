@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Informações da Festa</title>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #f8f0ff, #ffe9f3);
+      margin: 0;
+      padding: 2rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      min-height: 100vh;
+      animation: fadeIn 2s ease-in;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    h1 {
+      color: #5d3a9b;
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+    p {
+      font-size: 1.3rem;
+      color: #555;
+      margin-bottom: 2rem;
+      max-width: 600px;
+    }
+    .colors {
+      display: flex;
+      gap: 2rem;
+      margin-top: 1rem;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .color-circle {
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+      border: 3px solid #fff;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+      animation: pulse 2s infinite;
+    }
+    @keyframes pulse {
+      0% { transform: scale(1); box-shadow: 0 0 10px rgba(0,0,0,0.2); }
+      50% { transform: scale(1.1); box-shadow: 0 0 20px rgba(0,0,0,0.4); }
+      100% { transform: scale(1); box-shadow: 0 0 10px rgba(0,0,0,0.2); }
+    }
+    .lilas { background-color: #C8A2C8; }
+    .roxo { background-color: #800080; }
+    .dourado { background: linear-gradient(45deg, #FFD700, #FFA500); }
+    .alerta {
+      background-color: #ffe5e5;
+      color: #b30000;
+      padding: 1rem 2rem;
+      border-radius: 15px;
+      margin-top: 2rem;
+      font-weight: bold;
+      font-size: 1.2rem;
+      box-shadow: 0 0 15px rgba(179, 0, 0, 0.3);
+    }
+  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <h1>Informações Importantes para a Festa!</h1>
+
+  <p>O traje para a festa é <strong>Esporte Fino</strong>. ✨</p>
+
+  <div class="alerta">
+    Por favor, evitem usar as cores abaixo:
+  </div>
+
+  <div class="colors">
+    <div class="color-circle lilas" title="Lilás"></div>
+    <div class="color-circle roxo" title="Roxo"></div>
+    <div class="color-circle dourado" title="Dourado"></div>
+  </div>
+
+</body>
+</html>
